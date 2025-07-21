@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.cardPriceWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.cardText {
+    margin-bottom:14px;
+}
+
+.cardBtn {
+    background-color: transparent;
+    border:none;
+}
+
+.productCard {
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.cardImg {
+    width: 133px;
+    height: 112px;
+}
+
+.cardPriceTitle {
+    text-transform: uppercase;
+    font-size: 11px;
+}

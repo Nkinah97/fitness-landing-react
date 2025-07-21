@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.formWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.inputSearch {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid silver;
+    border-radius:$border-radius;
+    max-width: 250px;
+    height: 35px;
+    padding: 15px;
+}
+
+.input {
+    border: none;
+    max-width: 220px;
+    background-color: transparent;
+}

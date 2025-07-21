@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+
+.headerWrapper {
+    position: relative;
+    padding-bottom: 45px;
+}
+
+.headerWrapper ::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #E5E5E5;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.headerLogoImg {
+    width: 40px;
+    height: 40px;
+}
+
+.headerLogoDescription {
+    color: #9D9D9D;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currencyNumber {
+    color: $text-color;
+}
+
+.currency {
+    color: $text-color;
+    font-size: 12px;
+    text-transform: uppercase;
+}

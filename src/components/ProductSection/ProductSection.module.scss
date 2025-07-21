@@ -1,0 +1,9 @@
+.ProductSectionWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.productCard {
+    border: 1px solid silver;
+    padding: 30px 38px;
+}
