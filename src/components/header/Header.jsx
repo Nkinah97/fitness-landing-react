@@ -1,13 +1,20 @@
 import styles from './Header-style.module.scss'
 import logo from '../../assets/images/logo.svg'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
+import Drawer from '../Drawer/Drawer'
 
 import basket from '../../assets/images/basket.svg'
 import like from '../../assets/images/like.svg'
 import profile from '../../assets/images/user.svg'
 
 export default function Header() {
+
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+
     return (
+        <>
         <div className={styles.headerWrapper}>
             <div className={styles.headerContent}>
                 <div className={styles.headerLogo}>
@@ -21,11 +28,12 @@ export default function Header() {
                 <div className={styles.userPanel}>
                     <ul className={styles.navList}>
 
-                        <li>
-                            <Link className={styles.navItem} to="/">
+                        <li className={styles.basketWrapper}>
+                            <div className={styles.navItem} to="/">
                                 <img src={basket}></img>
                                 <span className={styles.currencyNumber}>1234</span> <span className={styles.currency}>uan</span>
-                            </Link>
+                            </div>
+                            <Drawer />
                         </li>
 
                         <li>
@@ -46,7 +54,7 @@ export default function Header() {
                 </div>
             </div>
         </div>
-        
+        </>
     )
 
 }
